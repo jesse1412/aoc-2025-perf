@@ -1,0 +1,37 @@
+# cargo-features = ["profile-rustflags"]
+[package]
+name = "aoc-2025-perf"
+version = "0.1.0"
+edition = "2024"
+
+[profile.release]
+debug = 2
+debug-assertions = false
+overflow-checks = false
+strip = "none"
+# rustflags = ["-Cforce-frame-pointers=yes"]
+lto = false
+
+
+[dependencies]
+rustc-hash = "2.1.1"
+
+[[bin]]
+name = "bench"
+path = "bin/bench.rs"
+target-cpu = "native"
+
+[lib]
+name = "aoc_2025_perf_lib"
+path = "lib/lib.rs"
+
+
+[[bin]]
+name = "day_01_p1"
+path = "bin/day_01/day_01_p1.rs"
+target-cpu = "native"
+
+[[bin]]
+name = "day_01_p2"
+path = "bin/day_01/day_01_p2.rs"
+target-cpu = "native"

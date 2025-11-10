@@ -1,0 +1,72 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Run 'bench'",
+            "type": "lldb",
+            "request": "launch",
+            "cargo": {
+                "args": [
+                    "run",
+                    "--bin=bench",
+                    "--release",
+                ]
+            },
+            "env": {
+                "RUSTFLAGS": "-C target-cpu=native'"
+            },
+            "args": []
+        },
+        {
+            "name": "Debug executable 'day_01_p1'",
+            "type": "lldb",
+            "request": "launch",
+            "cargo": {
+                "args": [
+                    "run",
+                    "--bin=day_01_p1"
+                ]
+            },
+            "args": []
+        },
+        {
+            "name": "Debug executable 'day_01_p2'",
+            "type": "lldb",
+            "request": "launch",
+            "cargo": {
+                "args": [
+                    "run",
+                    "--bin=day_01_p2"
+                ]
+            },
+            "args": []
+        },
+        {
+            "name": "Debug executable 'day_02_p1'",
+            "type": "lldb",
+            "request": "launch",
+            "cargo": {
+                "args": [
+                    "run",
+                    "--bin=day_02_p1"
+                ]
+            },
+            "args": []
+        },
+        {
+            "name": "Debug executable 'day_02_p2'",
+            "type": "lldb",
+            "request": "launch",
+            "cargo": {
+                "args": [
+                    "run",
+                    "--bin=day_02_p2"
+                ]
+            },
+            "args": []
+        },
+    ]
+}

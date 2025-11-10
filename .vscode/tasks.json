@@ -1,0 +1,28 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "profile-with-samply",
+            "type": "shell",
+            "command": "cargo",
+            "args": [
+                "build",
+                "--release",
+                "--bin",
+                "bench",
+                "&&",
+                "samply",
+                "record",
+                "target/release/bench"
+            ],
+            "group": "none",
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "panel": "new",
+                "close": true
+            },
+            "problemMatcher": []
+        }
+    ]
+}
