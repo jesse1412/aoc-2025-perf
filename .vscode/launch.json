@@ -68,5 +68,17 @@
             },
             "args": []
         },
+        {
+            "name": "Debug executable 'day_06_p1'",
+            "type": "lldb",
+            "request": "launch",
+            "cargo": {
+                "args": [
+                    "run",
+                    "--bin=day_06_p1"
+                ]
+            },
+            "args": []
+        },
     ]
 }
