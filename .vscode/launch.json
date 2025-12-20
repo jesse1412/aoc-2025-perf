@@ -5,6 +5,18 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "name": "Debug executable 'day_09_p1'",
+            "type": "lldb",
+            "request": "launch",
+            "cargo": {
+                "args": [
+                    "run",
+                    "--bin=day_09_p1"
+                ]
+            },
+            "args": []
+        },
+        {
             "name": "Debug executable 'day_08_p1'",
             "type": "lldb",
             "request": "launch",

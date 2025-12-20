@@ -105,3 +105,13 @@ target-cpu = "native"
 name = "day_08_p2"
 path = "bin/day_08/day_08_p2.rs"
 target-cpu = "native"
+
+[[bin]]
+name = "day_09_p1"
+path = "bin/day_09/day_09_p1.rs"
+target-cpu = "native"
+
+[[bin]]
+name = "day_09_p2"
+path = "bin/day_09/day_09_p2.rs"
+target-cpu = "native"
