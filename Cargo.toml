@@ -14,6 +14,9 @@ lto = false
 
 
 [dependencies]
+good_lp = { version = "1.14.2", default-features = false, features = [
+    "minilp",
+] }
 rustc-hash = "2.1.1"
 
 [[bin]]
