@@ -48,9 +48,9 @@ fn run_bench(input: &str, solver: fn(&str) -> i64) -> SolutionResult {
 fn main() {
     type InputSolverPair = Vec<InputWithSolvers<fn(&str) -> i64, fn(&str) -> i64>>;
     let inputs: InputSolverPair = vec![InputWithSolvers::new(
-        Path::new("data/day_01.txt"),
-        aoc_2025_perf_lib::day_01::p1,
-        aoc_2025_perf_lib::day_01::p2,
+        Path::new("data/day_10.txt"),
+        aoc_2025_perf_lib::day_10::p1,
+        aoc_2025_perf_lib::day_10::p2,
     )];
 
     let mut results: Vec<SolutionResult> = Vec::new();
