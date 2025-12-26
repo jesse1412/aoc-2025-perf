@@ -18,13 +18,13 @@ pub fn run(input: &str) -> i64 {
         }
     }
     let mut res: u64 = 0;
-    println!("{blended_start_ends:#?}");
+    // println!("{blended_start_ends:#?}");
     for line in lines {
         let n: u64 = line.parse().unwrap();
         match blended_start_ends.binary_search_by_key(&n, |t| t.0) {
             Ok(_) => {
                 res += 1;
-                println!("ok {n}");
+                // println!("ok {n}");
             }
             Err(i) => {
                 if let Some((start, end)) = blended_start_ends.get(i.saturating_sub(1))
@@ -32,7 +32,7 @@ pub fn run(input: &str) -> i64 {
                     && n <= *end
                 {
                     res += 1;
-                    println!("ok(err) {n}");
+                    // println!("ok(err) {n}");
                 }
             }
         }

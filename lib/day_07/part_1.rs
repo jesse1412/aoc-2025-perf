@@ -28,8 +28,8 @@ pub fn run(input: &str) -> i64 {
             }
         }
     }
-    for row in char_grid {
-        println!("{:}", row.into_iter().collect::<String>());
-    }
+    // for row in char_grid {
+    //     println!("{:}", row.into_iter().collect::<String>());
+    // }
     split_count
 }

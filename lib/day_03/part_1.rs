@@ -20,7 +20,7 @@ pub fn run(input: &str) -> i64 {
             .collect::<String>()
             .parse()
             .expect("valid num");
-        println!("{} - {num}", i + 1);
+        // println!("{} - {num}", i + 1);
         tot += num;
     }
     tot as i64

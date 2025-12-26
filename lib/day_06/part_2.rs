@@ -38,7 +38,7 @@ pub fn run(input: &str) -> i64 {
                 });
             }
         } else {
-            println!("{curr_num_chars:?}");
+            // println!("{curr_num_chars:?}");
             let num: u64 = curr_num_chars.iter().collect::<String>().parse().unwrap();
             match operator {
                 Operator::Add => *computed_nums.last_mut().unwrap() += num,
@@ -46,6 +46,6 @@ pub fn run(input: &str) -> i64 {
             }
         }
     }
-    println!("{computed_nums:?}");
+    // println!("{computed_nums:?}");
     computed_nums.into_iter().sum::<u64>() as i64
 }
