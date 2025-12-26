@@ -47,11 +47,68 @@ fn run_bench(input: &str, solver: fn(&str) -> i64) -> SolutionResult {
 
 fn main() {
     type InputSolverPair = Vec<InputWithSolvers<fn(&str) -> i64, fn(&str) -> i64>>;
-    let inputs: InputSolverPair = vec![InputWithSolvers::new(
-        Path::new("data/day_10.txt"),
-        aoc_2025_perf_lib::day_10::p1,
-        aoc_2025_perf_lib::day_10::p2,
-    )];
+    let inputs: InputSolverPair = vec![
+        InputWithSolvers::new(
+            Path::new("data/day_01.txt"),
+            aoc_2025_perf_lib::day_01::p1,
+            aoc_2025_perf_lib::day_01::p2,
+        ),
+        InputWithSolvers::new(
+            Path::new("data/day_02.txt"),
+            aoc_2025_perf_lib::day_02::p1,
+            aoc_2025_perf_lib::day_02::p2,
+        ),
+        InputWithSolvers::new(
+            Path::new("data/day_03.txt"),
+            aoc_2025_perf_lib::day_03::p1,
+            aoc_2025_perf_lib::day_03::p2,
+        ),
+        InputWithSolvers::new(
+            Path::new("data/day_04.txt"),
+            aoc_2025_perf_lib::day_04::p1,
+            aoc_2025_perf_lib::day_04::p2,
+        ),
+        InputWithSolvers::new(
+            Path::new("data/day_05.txt"),
+            aoc_2025_perf_lib::day_05::p1,
+            aoc_2025_perf_lib::day_05::p2,
+        ),
+        InputWithSolvers::new(
+            Path::new("data/day_06.txt"),
+            aoc_2025_perf_lib::day_06::p1,
+            aoc_2025_perf_lib::day_06::p2,
+        ),
+        InputWithSolvers::new(
+            Path::new("data/day_07.txt"),
+            aoc_2025_perf_lib::day_07::p1,
+            aoc_2025_perf_lib::day_07::p2,
+        ),
+        InputWithSolvers::new(
+            Path::new("data/day_08.txt"),
+            aoc_2025_perf_lib::day_08::p1,
+            aoc_2025_perf_lib::day_08::p2,
+        ),
+        InputWithSolvers::new(
+            Path::new("data/day_09.txt"),
+            aoc_2025_perf_lib::day_09::p1,
+            aoc_2025_perf_lib::day_09::p2,
+        ),
+        InputWithSolvers::new(
+            Path::new("data/day_10.txt"),
+            aoc_2025_perf_lib::day_10::p1,
+            aoc_2025_perf_lib::day_10::p2,
+        ),
+        InputWithSolvers::new(
+            Path::new("data/day_11.txt"),
+            aoc_2025_perf_lib::day_11::p1,
+            aoc_2025_perf_lib::day_11::p2,
+        ),
+        InputWithSolvers::new(
+            Path::new("data/day_12.txt"),
+            aoc_2025_perf_lib::day_12::p1,
+            aoc_2025_perf_lib::day_12::p2,
+        ),
+    ];
 
     let mut results: Vec<SolutionResult> = Vec::new();
     for InputWithSolvers {
